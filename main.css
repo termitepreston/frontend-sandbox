@@ -1,0 +1,17 @@
+:root {
+    color: revert;
+    background: revert;
+}
+
+.block {
+    background-color: red;
+}
+
+.inline {
+    background-color: aqua;
+}
+
+.new-block {
+    background: hotpink;
+    display: block;
+}
