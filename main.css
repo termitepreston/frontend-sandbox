@@ -1,6 +1,9 @@
 :root {
-    color: revert;
-    background: revert;
+    font-size: 2;
+}
+
+table {
+    font-family: sans-serif;
 }
 
 .block {
@@ -14,4 +17,44 @@
 .new-block {
     background: hotpink;
     display: block;
+}
+
+.borders {
+    border: 1px solid black;
+}
+
+.collapse {
+    border-collapse: collapse;
+}
+
+.separate {
+    border-collapse: separate;
+}
+
+.spaced-16 {
+    border-spacing: 16px;
+}
+
+.bottom {
+    caption-side: bottom;
+}
+
+.p-16 {
+    padding: 16px;
+}
+
+.p-8 {
+    padding: 8px;
+}
+
+.bg-green {
+    background: palegreen;
+}
+
+.bg-red {
+    background: salmon;
+}
+
+.center {
+    text-align: center;
 }

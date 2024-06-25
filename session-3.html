@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More HTML Elements</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>Some more HTML elements</h1>
+    <small><a href="/">Go back home</a></small>
+
+    <hr>
+
+    <h2 id="meter-element">Meter Element</h2>
+
+    <p>
+    <ol>
+        <li>Used to indicate progress</li>
+        <li>Are static</li>
+        <li>The content is accessibility feature?</li>
+        <li>Are inline</li>
+    </ol>
+    <meter value="2" min="0" max="10">2 out of 10</meter>
+
+    <meter value="0.6">60%</meter>
+
+    <hr>
+
+    <h3>Notes on attributes</h3>
+
+    <ul>
+        <li>
+            <dl>
+                <dt><code>optimum</code></dt>
+                <dd>This attribute indicates the optimum numeric value. <em>When used with the <code>low</code>
+                        attribute and <code>high</code> attribute, it gives an indication of where along the range is
+                        considered preferable. For example, if it's between the <code>min</code> attribute and the
+                        <code>low</code> attribute, then the lower range is considered preferred.</em></dd>
+            </dl>
+        </li>
+    </ul>
+
+    <meter value="9" min="0" max="100" low="10" high="80" optimum="47" style="width: 400px">9 of 100</meter> (9)
+    <br>
+    <meter value="32" min="0" max="100" low="10" high="80" optimum="47" style="width: 400px">32 of 100</meter> (32)
+    <br>
+    <meter value="47" min="0" max="100" low="10" high="80" optimum="47" style="width: 400px">47 of 100</meter> (47)
+    <br>
+    <meter value="50" min="0" max="100" low="10" high="80" optimum="47" style="width: 400px">50 of 100</meter> (50)
+    <br>
+    <meter value="80" min="0" max="100" low="10" high="80" optimum="47" style="width: 400px">80 of 100</meter> (80)
+    <br>
+    <meter value="81" min="0" max="100" low="10" high="80" optimum="47" style="width: 400px">81 of 100</meter> (81)
+    <br>
+    <meter value="100" min="0" max="100" low="10" high="80" optimum="47" style="width: 400px">100 of 100</meter> (100)
+    <br>
+    <meter value="101" min="0" max="100" low="10" high="80" optimum="47" style="width: 400px">101 of 100</meter> (101)
+    <br>
+    <meter value="110" min="0" max="100" low="10" high="80" optimum="47" style="width: 400px">110 of 100</meter> (110)
+    <br>
+
+    </p>
+
+    <hr>
+
+    <h2 id="progress">Progress Element</h2>
+
+    <ul>
+        <li>To display dynamic data.</li>
+        <li> Attributes
+            <dl>
+                <dt><code>value</code></dt>
+                <dd>The current value.</dd>
+
+                <dt><code>max</code></dt>
+                <dd>The maximum value allowed.</dd>
+            </dl>
+        </li>
+        <li>The content inside it, which should be phrase content, is for screen readers.</li>
+    </ul>
+
+    <p>
+        <progress id="p1" value="50" max="100" style="width: 400px"><span id="s1">50</span>%</progress>
+    </p>
+
+    <hr>
+
+    <h2 id="tables">Tables</h2>
+
+    <p>The common tags used in the definition of tables are <code>&lt;table&gt;</code>, <code>&lt;caption&gt;</code>,
+        <code>&lt;tr&gt;</code>,
+        <code>&lt;thead&gt;</code>, and <code>&lt;td&gt;</code>.
+    </p>
+
+    <h3>Notes on tables</h3>
+
+    <ul>
+        <li>The default layout of tables is borderless.</li>
+        <li>Use CSS to give tables borders.</li>
+        <li>
+            The following elements are part of table structure.
+            <ul>
+                <li><code>&lt;caption&gt;</code></li>
+                <li><code>&lt;thead&gt;</code></li>
+                <li><code>&lt;colgroup&gt;</code></li>
+                <li><code>&lt;col&gt;</code></li>
+                <li><code>&lt;th&gt;</code></li>
+                <li><code>&lt;tbody&gt;</code></li>
+                <li><code>&lt;tr&gt;</code></li>
+                <li><code>&lt;td&gt;</code></li>
+                <li><code>&lt;tfoot&gt;</code></li>
+            </ul>
+        </li>
+        <li>For styling purpose the table elements may be thought of as being put on six superimposed layers.</li>
+    </ul>
+
+    <h3>Default styling</h3>
+
+    <table>
+        <caption>Some of my favorite artists.</caption>
+        <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+            <td>Electric Lady Land</td>
+            <td>Jimmi Hendrix</td>
+            <td>Revolutionary</td>
+        </tr>
+        <tr>
+            <td>Revolver</td>
+            <td>The Beatles</td>
+            <td>Their best work.</td>
+        </tr>
+        <tr>
+            <td>Apostrophe</td>
+            <td>Frank Zappa</td>
+            <td>Brilliant mix of Rock and Jazz.</td>
+        </tr>
+        <tr>
+            <td>Birds of fire.</td>
+            <td>Mahavishnu Orchestra</td>
+            <td>The ultimate fusion album.</td>
+        </tr>
+    </table>
+
+    <h3>With borders (not collapsed)</h3>
+
+    <table class="borders">
+        <caption>Some of my favorite artists.</caption>
+        <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+            <td class="borders">Electric Lady Land</td>
+            <td class="borders">Jimmi Hendrix</td>
+            <td class="borders">Revolutionary</td>
+        </tr>
+        <tr>
+            <td class="borders">Revolver</td>
+            <td class="borders">The Beatles</td>
+            <td class="borders">Their best work.</td>
+        </tr>
+        <tr>
+            <td class="borders">Apostrophe</td>
+            <td class="borders">Frank Zappa</td>
+            <td class="borders">Brilliant mix of Rock and Jazz.</td>
+        </tr>
+        <tr>
+            <td class="borders">Birds of fire.</td>
+            <td class="borders">Mahavishnu Orchestra</td>
+            <td class="borders">The ultimate fusion album.</td>
+        </tr>
+    </table>
+
+    <h3>With borders (collapsed)</h3>
+
+    <p>To collapse the space between the borders of each cells, which by default will have space, use the style property
+        <code>border-collapse: collapse; </code> on the
+        <code>&lt;table&gt;</code> tag.
+    </p>
+
+    <table class="borders collapse">
+        <caption>Some of my favorite artists.</caption>
+        <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+            <td class="borders">Electric Lady Land</td>
+            <td class="borders">Jimmi Hendrix</td>
+            <td class="borders">Revolutionary</td>
+        </tr>
+        <tr>
+            <td class="borders">Revolver</td>
+            <td class="borders">The Beatles</td>
+            <td class="borders">Their best work.</td>
+        </tr>
+        <tr>
+            <td class="borders">Apostrophe</td>
+            <td class="borders">Frank Zappa</td>
+            <td class="borders">Brilliant mix of Rock and Jazz.</td>
+        </tr>
+        <tr>
+            <td class="borders">Birds of fire.</td>
+            <td class="borders">Mahavishnu Orchestra</td>
+            <td class="borders">The ultimate fusion album.</td>
+        </tr>
+    </table>
+
+    <h3>Position caption side using CSS</h3>
+
+    <p>To render the caption at the bottom the table use the style rule <code>caption-side: bottom;</code></p>
+
+    <table class="borders collapse bottom">
+        <caption>Some of my favorite artists.</caption>
+        <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+            <td class="borders">Electric Lady Land</td>
+            <td class="borders">Jimmi Hendrix</td>
+            <td class="borders">Revolutionary</td>
+        </tr>
+        <tr>
+            <td class="borders">Revolver</td>
+            <td class="borders">The Beatles</td>
+            <td class="borders">Their best work.</td>
+        </tr>
+        <tr>
+            <td class="borders">Apostrophe</td>
+            <td class="borders">Frank Zappa</td>
+            <td class="borders">Brilliant mix of Rock and Jazz.</td>
+        </tr>
+        <tr>
+            <td class="borders">Birds of fire.</td>
+            <td class="borders">Mahavishnu Orchestra</td>
+            <td class="borders">The ultimate fusion album.</td>
+        </tr>
+    </table>
+
+    <h3>Semantically sectioned table for improved accessibility.</h3>
+
+    <table class="borders collapse bottom">
+        <caption>Some of my favorite artists.</caption>
+        <thead>
+            <tr>
+                <th class="borders">Title</th>
+                <th class="borders">Artist</th>
+                <th class="borders">Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="borders">Electric Lady Land</td>
+                <td class="borders">Jimmi Hendrix</td>
+                <td class="borders">Revolutionary</td>
+            </tr>
+            <tr>
+                <td class="borders">Revolver</td>
+                <td class="borders">The Beatles</td>
+                <td class="borders">Their best work.</td>
+            </tr>
+            <tr>
+                <td class="borders">Apostrophe</td>
+                <td class="borders">Frank Zappa</td>
+                <td class="borders">Brilliant mix of Rock and Jazz.</td>
+            </tr>
+            <tr>
+                <td class="borders">Birds of fire.</td>
+                <td class="borders">Mahavishnu Orchestra</td>
+                <td class="borders">The ultimate fusion album.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Table padding</h3>
+
+    <p>We can add padding to tables using stylesheets.</p>
+
+    <table class="borders collapse bottom p-16">
+        <caption>Some of my favorite artists.</caption>
+        <thead>
+            <tr>
+                <th class="borders p-16">Title</th>
+                <th class="borders p-16">Artist</th>
+                <th class="borders p-16">Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="borders p-8">Electric Lady Land</td>
+                <td class="borders p-8">Jimmi Hendrix</td>
+                <td class="borders p-8">Revolutionary</td>
+            </tr>
+            <tr>
+                <td class="borders p-8">Revolver</td>
+                <td class="borders p-8">The Beatles</td>
+                <td class="borders p-8">Their best work.</td>
+            </tr>
+            <tr>
+                <td class="borders p-8">Apostrophe</td>
+                <td class="borders p-8">Frank Zappa</td>
+                <td class="borders p-8">Brilliant mix of Rock and Jazz.</td>
+            </tr>
+            <tr>
+                <td class="borders p-8">Birds of fire.</td>
+                <td class="borders p-8">Mahavishnu Orchestra</td>
+                <td class="borders p-8">The ultimate fusion album.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Cell spacing</h3>
+
+    <p>We can can add spacing to the cells using the <code>border-spacing</code> CSS property on a table. For this to
+        work <code>border-collapse</code> needs to be set to separate.</p>
+
+    <table class="borders separate bottom p-16 spaced-16">
+        <caption>Some of my favorite artists.</caption>
+        <thead>
+            <tr>
+                <th class="borders p-16">Title</th>
+                <th class="borders p-16">Artist</th>
+                <th class="borders p-16">Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="borders p-8">Electric Lady Land</td>
+                <td class="borders p-8">Jimmi Hendrix</td>
+                <td class="borders p-8">Revolutionary</td>
+            </tr>
+            <tr>
+                <td class="borders p-8">Revolver</td>
+                <td class="borders p-8">The Beatles</td>
+                <td class="borders p-8">Their best work.</td>
+            </tr>
+            <tr>
+                <td class="borders p-8">Apostrophe</td>
+                <td class="borders p-8">Frank Zappa</td>
+                <td class="borders p-8">Brilliant mix of Rock and Jazz.</td>
+            </tr>
+            <tr>
+                <td class="borders p-8">Birds of fire.</td>
+                <td class="borders p-8">Mahavishnu Orchestra</td>
+                <td class="borders p-8">The ultimate fusion album.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Colspan and Rowspan</h3>
+
+    <p>We can span rows and columns using <code>colspan</code> and <code>rowspan</code> respectively.</p>
+
+    <table class="borders collapse bottom">
+        <thead>
+            <tr>
+                <th class="borders p-16">Name</th>
+                <th class="borders p-16" colspan="2">Telephone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="borders p-8">Ezra Tadios</td>
+                <td class="borders p-8">+251 (911) 37-54-87</td>
+                <td class="borders p-8">+251 (114) 27-52-88</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>A table with child cell that spans two rows.</p>
+
+    <table class="borders collapse bottom p-16">
+        <caption><i>Notice that <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code> can live side by side inside the
+                same <code>&lt;tr&gt;</code>.</i></caption>
+        <thead>
+            <tr>
+                <th class="borders p-16">Name</th>
+                <td class="borders p-16">Ezra Tadios</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="borders p-8" rowspan="2">Telephone</th>
+                <td class="borders p-8">+251 (911) 37-54-87</td>
+            </tr>
+            <tr>
+                <!-- Cell that is supposed to be here is occupied by a spanning row from above. -->
+                <td class="borders p-8">+251 (114) 27-52-88</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Column groups and spans</h3>
+
+    <p>Using column groups we can group one or more adjacent columns. The <code>&lt;colgroup&gt;</code> element must
+        always go after the caption element if there are any and before any <code>&lt;thead&gt;</code>,
+        <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code> or <code>&lt;tr&gt;</code> elements.
+    </p>
+
+    <table class="collapse borders bottom">
+        <caption>Grocery items</caption>
+
+        <colgroup>
+            <col class="bg-green">
+            <col class="bg-red" span="2">
+        </colgroup>
+
+        <thead>
+            <th class="borders p-16">Sr. No</th>
+            <th class="borders p-16">Product</th>
+            <th class="borders p-16">Price</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="borders p-8">1</td>
+                <td class="borders p-8">Rice</td>
+                <td class="borders p-8">&dollar;85</td>
+            </tr>
+            <tr>
+                <td class="borders p-8">2</td>
+                <td class="borders p-8">Butter</td>
+                <td class="borders p-8">&dollar;260</td>
+            </tr>
+            <tr>
+                <td class="borders p-8">3</td>
+                <td class="borders p-8">Mango</td>
+                <td class="borders p-8">&dollar;125</td>
+            </tr>
+        </tbody>
+        <tfoot style="background: gainsboro;">
+            <tr>
+                <td class="borders p-8" colspan="2" style="text-align: end;">Total</td>
+                <td class="borders p-8">&dollar;470</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h2 id="iframes">IFrames</h2>
+
+    <iframe src="/" frameborder="0" id="frame1"
+        style="display: block; float: right; width: 450px; height: 250px; margin: 4px 0 4px 4px; padding: 0; border: 2px solid #666"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit nobis ullam doloribus aliquam ut ex
+        architecto veniam odio! Minima, ex hic nesciunt incidunt placeat eos corrupti ratione aperiam accusantium qui
+        sed soluta ipsa quia alias, ipsam veniam? Laborum, provident quis soluta repellendus veritatis, saepe
+        repudiandae molestias repellat eius similique iste placeat. Error alias modi maiores et tempora vero velit
+        commodi est odio fugiat? Non a eligendi maxime at error perferendis nobis dolores alias eius ut laborum
+        veritatis nulla placeat obcaecati corporis, cumque odio incidunt omnis, aut molestiae. Aut repudiandae magni
+        culpa harum eligendi, quas mollitia est cumque pariatur ullam. Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Libero, sequi. In magnam cum dolorum. Distinctio esse sapiente ut blanditiis dignissimos
+        quisquam! Error laborum reprehenderit obcaecati qui vero alias, officiis temporibus enim, esse quo laudantium,
+        aspernatur deserunt impedit rem eveniet quidem nesciunt. Fugiat omnis explicabo, ducimus eum aspernatur sed,
+        labore at harum suscipit saepe enim mollitia illo odit unde, dolorem non eius esse consequuntur commodi modi.
+        Suscipit doloribus sit ducimus, inventore nisi ex cum accusantium laboriosam in. Optio iure error mollitia, aut
+        deleniti tempora pariatur distinctio voluptatem aspernatur, fugit ullam ut, sint veniam officia velit illum ex
+        reprehenderit. Tempore sunt recusandae officiis fugit atque, odit hic mollitia. Qui dicta quisquam ut sint esse,
+        dolorem tenetur placeat hic minima perferendis saepe inventore! Libero, iusto sit deserunt quaerat alias,
+        consectetur corporis explicabo repellat expedita sequi sint molestiae eaque? Quidem voluptate dolore deleniti
+        quae quod consequuntur animi inventore asperiores veritatis placeat. Dolor aliquid ratione impedit magnam,
+        dolorem nostrum accusantium repellat sunt. Necessitatibus recusandae accusamus vel asperiores porro quam et cum
+        dicta harum alias ipsa, impedit eaque voluptate, tempore omnis? Architecto dolorum adipisci soluta voluptatem,
+        assumenda, id praesentium delectus voluptatibus illum aut doloremque, consequatur sunt distinctio repudiandae ea
+        iste nobis. Adipisci quae repudiandae mollitia fugiat ipsam nam, consectetur delectus reprehenderit dicta, nihil
+        sit. Deleniti facere, repellendus, odit iste dolores sapiente consequatur provident nemo rerum quas tenetur?
+        Exercitationem temporibus explicabo ducimus adipisci, voluptatum aut perferendis quaerat neque harum quis id,
+        possimus eum. Cum aliquam repellendus asperiores repellat perspiciatis voluptate ducimus, possimus expedita
+        incidunt nisi odit rem ullam aspernatur reprehenderit sit. Voluptatem hic velit eveniet praesentium dignissimos
+        temporibus quos consectetur, natus commodi corporis vel officiis, error distinctio est voluptate libero facilis
+        veritatis obcaecati. Quae dolor nihil in quidem excepturi non nulla quos, nobis nam ab culpa dolores molestias
+        ipsam explicabo tempora voluptates doloremque aperiam a, neque dolore, eaque iure at sapiente dicta? Quae
+        eveniet adipisci blanditiis? Consequatur quia fugit maxime minima! Dolorum hic a eius rerum obcaecati quos
+        perferendis numquam? Ullam esse, excepturi, dolores optio dignissimos obcaecati odio illo aut suscipit possimus
+        cupiditate atque iste error blanditiis neque reiciendis tempora odit iure eligendi nesciunt. Accusamus quia
+        praesentium accusantium iusto vero sequi ducimus quas vel nam numquam, consectetur maxime, sapiente culpa
+        dolores repudiandae sed deserunt veritatis porro? Assumenda sapiente velit dolores aperiam atque non,
+        consequuntur, earum illum ex laudantium nostrum, beatae ipsum recusandae porro dolorem delectus molestias
+        provident minus aliquam magni quam quae. Doloremque autem iste dicta ab reprehenderit, iure quidem temporibus
+        repudiandae delectus officiis unde animi eius debitis corrupti tempora magni tenetur quis cupiditate pariatur
+        natus error in provident! Quam tenetur mollitia, perspiciatis, quae, beatae possimus asperiores exercitationem
+        delectus rem ipsum eius optio obcaecati sint. Eligendi provident minus ad hic explicabo unde quod fugit saepe
+        beatae, quos veritatis corrupti molestias quidem omnis corporis expedita eos quae dicta minima illum iure harum!
+        Dignissimos accusantium odio doloremque animi obcaecati corporis, amet molestiae, vel perferendis accusamus
+        beatae. Totam ut, aperiam accusamus reprehenderit quia minima nostrum sit omnis ratione quod soluta eos nam
+        voluptate excepturi, assumenda ex obcaecati, doloribus quas quam.</p>
+
+    <hr style="clear: both">
+
+    <h2 id="forms">HTML Forms</h2>
+
+    <p>Forms are how we accept inputs from the user.</p>
+
+    <h3>Inputs of various kinds.</h3>
+
+    <p>get method will encode the payload into the url</p>
+
+    <p>post method will endcode the payload into the body</p>
+
+    <form action="/form1" method="get">
+        <label for="ex1-firstname">First name:</label><input type="text" id="ex1-firstname"> <br>
+        <label for="ex1-lastname">Last name:</label><input type="text" id="ex1-lastname"> <br>
+        <label for="ex1-password">Password: </label><input type="password" id="ex1-password"><br>
+        <label for="ex1-date">Date: </label><input type="date" name="date1" id="ex1-date" pattern="\d{4}-\d{2}-\d{2}"
+            title="YYYY-MM-DD"> <br>
+        <label for="ex1-color">Color: </label><input type="color" name="color1" id="ex1-color" value="#336699"><br>
+        <label for="ex1-email">Email: </label><input type="email" name="email1" id="ex1-email" multiple><br>
+        <label>Number: <input type="number" name="number1" min="1" max="100" value="42"></label><br>
+        <label>Price: <input type="range" name="range1" min="0" max="100000" step="1000" value="10000"></label><br>
+        <label>Search <input type="search" name="search1"></label><br>
+        <label>
+            URL
+            <input type="url" name="url1">
+        </label>
+        <p>
+            <input type="submit" value="Submit" name="ex1-submit">
+            <input type="button" value="Button" name="ex1-button">
+            <input type="reset" value="Reset" name="ex1-reset">
+        </p>
+    </form>
+
+    <h3>Checkboxes and Radio buttons</h3>
+
+    <label for="ex2-chk1">Checkbox 1</label><input type="checkbox" name="chk1" id="ex2-chk1" checked autofocus>
+    <label for="ex2-chk2">Checkbox 2</label><input type="checkbox" name="chk1" id="ex2-chk1">
+    <label for="ex2-chk3">Checkbox 3</label><input type="checkbox" name="chk1" id="ex2-chk1" checked>
+    <br>
+    <label for="ex2-radio1">U.S.A</label><input type="radio" name="radio1" id="ex2-radio1" value="america">
+    <label for="ex2-radio2">China</label><input type="radio" name="radio1" id="ex2-radio2" value="china" checked>
+    <label for="ex2-radio3">Others</label><input type="radio" name="radio1" id="ex2-radio3" value="other">
+    </form>
+
+    <h2>Form and Table Practice</h2>
+
+    <h3 id="table-ex1">Table exercise 1</h3>
+
+    <table class="separate spaced-16 borders">
+        <thead>
+            <tr>
+                <th rowspan="2" class="p-16 borders">Heading</th>
+                <th class="p-16 borders">Students</th>
+                <th class="p-16 borders" colspan="3">Details</th>
+            </tr>
+            <tr>
+                <th class="p-16 borders">Id</th>
+                <th class="p-16 borders">name</th>
+                <th class="p-16 borders">Department</th>
+                <th class="p-16 borders">Roll Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="p-8 borders" rowspan="4">Student List</td>
+                <td class="p-8 borders">1</td>
+                <td class="p-8 borders">Victor</td>
+                <td class="p-8 borders">Computer Science</td>
+                <td class="p-8 borders">12345</td>
+            </tr>
+            <tr>
+                <td class="p-8 borders">2</td>
+                <td class="p-8 borders">Williams</td>
+                <td class="p-8 borders">Electronics</td>
+                <td class="p-8 borders">23456</td>
+            </tr>
+            <tr>
+                <td class="p-8 borders">3</td>
+                <td class="p-8 borders">Harry</td>
+                <td class="p-8 borders">Electrical</td>
+                <td class="p-8 borders">34567</td>
+            </tr>
+            <tr>
+                <td class="p-8 borders">4</td>
+                <td class="p-8 borders">Rick</td>
+                <td class="p-8 borders">Civil</td>
+                <td class="p-8 borders">45678</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3 id="table-ex2">Table exercise 2</h3>
+
+    <table class="collapse borders">
+        <caption>
+            <p><i>A test table with merged cells</i></p>
+        </caption>
+        <thead>
+            <tr>
+                <th class="borders" rowspan="2">
+                    </td>
+                <th class="p-8 borders" colspan="2">Average</td>
+                <th class="p-8 borders" rowspan="2">Red Eyes</td>
+            </tr>
+            <tr>
+                <th class="p-8 borders">Height</th>
+                <th class="p-8 borders">Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="p-8 borders">Males</th>
+                <td class="p-8 borders">1.9</td>
+                <td class="p-8 borders">0.003</td>
+                <td class="p-8 borders">40 %</td>
+            </tr>
+            <tr>
+                <th class="p-8 borders">Females</th>
+                <td class="p-8 borders">1.7</td>
+                <td class="p-8 borders">0.002</td>
+                <td class="p-8 borders">43 %</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3 id="table-ex3">Table exercise 3</h3>
+
+    <table class="collapse borders">
+        <caption>Example: Nested</caption>
+        <thead>
+            <tr>
+                <th class="p-16 borders" colspan="2" rowspan="2">CI</th>
+                <th class="p-16 borders" rowspan="2">All Genders</th>
+                <th class="p-16 borders">By Gender</th>
+            </tr>
+            <tr>
+                <th class="p-16 borders">
+                    <table class="separate spaced-16 borders">
+                        <thead>
+                            <tr>
+                                <th class="borders p-16">Males</th>
+                                <th class="borders p-16">Females</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="borders p-8">9215604</td>
+                                <td class="borders p-8">4512358</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <th class="borders p-8">Rural</th>
+            <td class="borders p-8">6521458</td>
+            <td class="borders p-8">4215389</td>
+            <td class="borders p-8">4152348</td>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3 id="table-ex4">Exercise 4</h3>
+
+    <table class="collapse borders">
+        <caption>Class schedule</caption>
+
+        <thead>
+            <tr>
+                <th class="borders p-8" rowspan="2">Days</th>
+                <th class="borders p-8" colspan="6">Time</th>
+            </tr>
+            <tr>
+                <th class="borders p-8">8:00</th>
+                <th class="borders p-8">9:00</th>
+                <th class="borders p-8">10:00</th>
+                <th class="borders p-8">11:00</th>
+                <th class="borders p-8">11:30</th>
+                <th class="borders p-8">12:30</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="borders p-8">Mon</td>
+                <td class="borders p-8">Course 1</td>
+                <td class="borders p-8">Course 2</td>
+                <td class="borders p-8">Course 3</td>
+                <td class="borders p-8" rowspan="5" align="center">B<br>R<br>E<br>A<br>K</td>
+                <td class="borders p-8">Course 5</td>
+                <td class="borders p-8"></td>
+            </tr>
+            <tr>
+                <td class="borders p-8">Tue</td>
+                <td class="borders p-8" colspan="2"></td>
+                <td class="borders p-8">Course 2</td>
+                <td class="borders p-8">Course 4</td>
+                <td class="borders p-8">Course 1</td>
+            </tr>
+            <tr>
+                <td class="borders p-8">Wed</td>
+                <td class="borders p-8">Course 3</td>
+                <td class="borders p-8" colspan="2"></td>
+                <td class="borders p-8">Course 2</td>
+                <td class="borders p-8"></td>
+            </tr>
+            <tr>
+                <td class="borders p-8">Thr</td>
+                <td class="borders p-8" rowspan="2">Course 4</td>
+                <td class="borders p-8">Course 2</td>
+                <td class="borders p-8">Course 3</td>
+                <td class="borders p-8" rowspan="2" colspan="2" align="center">Thesis</td>
+            </tr>
+            <tr>
+                <td class="borders p-8">Fri</td>
+                <td class="borders p-8"></td>
+                <td class="borders p-8">Course 1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3 id="form-ex1">Form Exercise 1</h3>
+
+    <h4>HTML Form</h4>
+
+    <form action="/form-ex1" method="get">
+        <label for="form-ex1-in1">First name:</label><input type="text" name="form-ex1-in1" id="form-ex1-in1"><br>
+        <label for="form-ex1-in2">Last name:</label><input type="text" name="form-ex1-in2" id="form-ex1-in2"> <br>
+        <label for="form-ex1-in3">E-mail: </label><input type="email" name="form-ex1-in3" id="form-ex1-in3"><br>
+        <label for="form-ex1-in4">Male:</label><input type="radio" name="form-ex1-radio1" id="form-ex1-in4"><br>
+        <label for="form-ex1-in5">Female:</label><input type="radio" name="form-ex1-radio1" id="form-ex1-in5"><br>
+        <input type="submit" value="Submit"><input type="reset" value="Reset">
+    </form>
+
+    <hr>
+
+    <h3 id="form-ex3">Form exercise 3</h3>
+
+
+
+    <hr>
+</body>
+
+</html>
