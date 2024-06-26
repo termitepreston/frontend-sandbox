@@ -2,8 +2,9 @@
     font-size: 1.5;
 }
 
-form {
-    font-family: sans-serif;
+form,
+table {
+    font-family: "Inter";
 }
 
 
