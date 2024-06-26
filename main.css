@@ -1,7 +1,10 @@
 :root {
-    font-size: 1;
+    font-size: 1.5;
 }
 
+form {
+    font-family: sans-serif;
+}
 
 
 .block {
@@ -59,4 +62,12 @@
 
 .center {
     text-align: center;
+}
+
+.full {
+    width: 100%;
+}
+
+.red {
+    color: red;
 }

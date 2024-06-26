@@ -533,609 +533,148 @@
     <h3>Checkboxes and Radio buttons</h3>
 
     <label for="ex2-chk1">Checkbox 1</label><input type="checkbox" name="chk1" id="ex2-chk1" checked autofocus>
-    <label for="ex2-chk2">Checkbox 2</label><input type="checkbox" name="chk1" id="ex2-chk1">
-    <label for="ex2-chk3">Checkbox 3</label><input type="checkbox" name="chk1" id="ex2-chk1" checked>
+    <label for="ex2-chk2">Checkbox 2</label><input type="checkbox" name="chk1" id="ex2-chk2">
+    <label for="ex2-chk3">Checkbox 3</label><input type="checkbox" name="chk1" id="ex2-chk3" checked>
     <br>
     <label for="ex2-radio1">U.S.A</label><input type="radio" name="radio1" id="ex2-radio1" value="america">
     <label for="ex2-radio2">China</label><input type="radio" name="radio1" id="ex2-radio2" value="china" checked>
     <label for="ex2-radio3">Others</label><input type="radio" name="radio1" id="ex2-radio3" value="other">
     </form>
 
-    <h2>Form and Table Practice</h2>
 
-    <h3 id="table-ex1">Table exercise 1</h3>
+    <h3>Forms class example</h3>
 
-    <table class="separate spaced-4 borders">
-        <thead>
-            <tr>
-                <th rowspan="2" class="p-16 borders">Heading</th>
-                <th class="p-16 borders">Students</th>
-                <th class="p-16 borders" colspan="3">Details</th>
-            </tr>
-            <tr>
-                <th class="p-16 borders">Id</th>
-                <th class="p-16 borders">Name</th>
-                <th class="p-16 borders">Department</th>
-                <th class="p-16 borders">Roll Number</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="p-8 borders" rowspan="4">Student List</td>
-                <td class="p-8 borders">1</td>
-                <td class="p-8 borders">Victor</td>
-                <td class="p-8 borders">Computer Science</td>
-                <td class="p-8 borders">12345</td>
-            </tr>
-            <tr>
-                <td class="p-8 borders">2</td>
-                <td class="p-8 borders">Williams</td>
-                <td class="p-8 borders">Electronics</td>
-                <td class="p-8 borders">23456</td>
-            </tr>
-            <tr>
-                <td class="p-8 borders">3</td>
-                <td class="p-8 borders">Harry</td>
-                <td class="p-8 borders">Electrical</td>
-                <td class="p-8 borders">34567</td>
-            </tr>
-            <tr>
-                <td class="p-8 borders">4</td>
-                <td class="p-8 borders">Rick</td>
-                <td class="p-8 borders">Civil</td>
-                <td class="p-8 borders">45678</td>
-            </tr>
-        </tbody>
-    </table>
+    <form action="/registration" method="get">
+        <fieldset>
+            <legend>
+                <h2>Registration</h2>
+            </legend>
 
-    <hr>
-
-    <h3 id="table-ex2">Table exercise 2</h3>
-
-    <table class="collapse borders">
-        <caption>
-            <p><i>A test table with merged cells</i></p>
-        </caption>
-        <thead>
-            <tr>
-                <th class="borders" rowspan="2">
-                    </td>
-                <th class="p-8 borders" colspan="2">Average</td>
-                <th class="p-8 borders" rowspan="2">Red Eyes</td>
-            </tr>
-            <tr>
-                <th class="p-8 borders">Height</th>
-                <th class="p-8 borders">Weight</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th class="p-8 borders">Males</th>
-                <td class="p-8 borders">1.9</td>
-                <td class="p-8 borders">0.003</td>
-                <td class="p-8 borders">40 %</td>
-            </tr>
-            <tr>
-                <th class="p-8 borders">Females</th>
-                <td class="p-8 borders">1.7</td>
-                <td class="p-8 borders">0.002</td>
-                <td class="p-8 borders">43 %</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <hr>
-
-    <h3 id="table-ex3">Table exercise 3</h3>
-
-    <table class="collapse borders">
-        <caption>Example: Nested</caption>
-        <thead>
-            <tr>
-                <th class="p-16 borders" colspan="2" rowspan="2">CI</th>
-                <th class="p-16 borders" rowspan="2">All Genders</th>
-                <th class="p-16 borders">By Gender</th>
-            </tr>
-            <tr>
-                <th class="p-16 borders">
-                    <table class="separate spaced-4 borders">
-                        <thead>
-                            <tr>
-                                <th class="borders p-16">Males</th>
-                                <th class="borders p-16">Females</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="borders p-8">9215604</td>
-                                <td class="borders p-8">4512358</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <th class="borders p-8">Rural</th>
-            <td class="borders p-8">6521458</td>
-            <td class="borders p-8">4215389</td>
-            <td class="borders p-8">4152348</td>
-        </tbody>
-    </table>
-
-    <hr>
-
-    <h3 id="table-ex4">Exercise 4</h3>
-
-    <table class="collapse borders">
-        <caption>Class schedule</caption>
-
-        <thead>
-            <tr>
-                <th class="borders p-8" rowspan="2">Days</th>
-                <th class="borders p-8" colspan="6">Time</th>
-            </tr>
-            <tr>
-                <th class="borders p-8">8:00</th>
-                <th class="borders p-8">9:00</th>
-                <th class="borders p-8">10:00</th>
-                <th class="borders p-8">11:00</th>
-                <th class="borders p-8">11:30</th>
-                <th class="borders p-8">12:30</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="borders p-8">Mon</td>
-                <td class="borders p-8">Course 1</td>
-                <td class="borders p-8">Course 2</td>
-                <td class="borders p-8">Course 3</td>
-                <td class="borders p-8" rowspan="5" align="center">B<br>R<br>E<br>A<br>K</td>
-                <td class="borders p-8">Course 5</td>
-                <td class="borders p-8"></td>
-            </tr>
-            <tr>
-                <td class="borders p-8">Tue</td>
-                <td class="borders p-8" colspan="2"></td>
-                <td class="borders p-8">Course 2</td>
-                <td class="borders p-8">Course 4</td>
-                <td class="borders p-8">Course 1</td>
-            </tr>
-            <tr>
-                <td class="borders p-8">Wed</td>
-                <td class="borders p-8">Course 3</td>
-                <td class="borders p-8" colspan="2"></td>
-                <td class="borders p-8">Course 2</td>
-                <td class="borders p-8"></td>
-            </tr>
-            <tr>
-                <td class="borders p-8">Thr</td>
-                <td class="borders p-8" rowspan="2">Course 4</td>
-                <td class="borders p-8">Course 2</td>
-                <td class="borders p-8">Course 3</td>
-                <td class="borders p-8" rowspan="2" colspan="2" align="center">Thesis</td>
-            </tr>
-            <tr>
-                <td class="borders p-8">Fri</td>
-                <td class="borders p-8"></td>
-                <td class="borders p-8">Course 1</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <hr>
-
-    <h3 id="form-ex1">Form Exercise 1</h3>
-
-    <h4>HTML Form</h4>
-
-    <form action="/form-ex1" method="get">
-        <label for="form-ex1-in1">First name: </label><input type="text" name="form-ex1-in1" id="form-ex1-in1"><br>
-        <label for="form-ex1-in2">Last name: </label><input type="text" name="form-ex1-in2" id="form-ex1-in2"> <br>
-        <label for="form-ex1-in3">E-mail: </label><input type="email" name="form-ex1-in3" id="form-ex1-in3"><br>
-        <label for="form-ex1-in4">Male: </label><input type="radio" name="form-ex1-radio1" id="form-ex1-in4"><br>
-        <label for="form-ex1-in5">Female: </label><input type="radio" name="form-ex1-radio1" id="form-ex1-in5"><br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-    </form>
-
-    <hr>
-
-    <h3 id="form-ex3">Form exercise 3</h3>
-
-    <form action="/form3">
-        <table class="borders separate">
-            <thead>
-                <tr>
-                    <th class="borders p-16" colspan="2">
-                        Pizza Shop 2.0
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="borders p-8"><label for="form3-name">Name</label></td>
-                    <td class="borders p-8"><input type="text" name="form3-name" id="form3-name"></td>
-                </tr>
-                <tr>
-                    <td class="borders p-8">Pizza Topping</td>
-                    <td class="borders p-8">
-                        <input type="radio" name="form3-radio" id="form3-radio1">
-                        <label for="form3-radio1">Supreme</label> <br>
-                        <input type="radio" name="form3-radio" id="form3-radio2">
-                        <label for="form3-radio2">Vegeterian</label> <br>
-                        <input type="radio" name="form3-radio" id="form3-radio3">
-                        <label for="form3-radio3">Hawaiian</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borders p-8"><label for="form3-select">Pizza Sauce</label></td>
-                    <td class="borders p-8">
-                        <select name="" id="form3-select">
-                            <option value="tomato">Tomato</option>
-                            <option value="pineapple">Pineapple</option>
-                            <option value="har">Ham</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borders p-8">Optional Extras</td>
-                    <td class="borders p-8">
-                        <input type="checkbox" name="form3-checkbox" id="form3-checkbox1">
-                        <label for="form3-checkbox1">Extra Cheese</label>
-                        <input type="checkbox" name="form3-checkbox" id="form3-checkbox2">
-                        <label for="form3-checkbox3">Gluten Free Base</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borders p-8" colspan="2">
-                        <p><label for="form3-textarea">Delivery Options</label></p>
-                        <textarea name="form3-textarea" id="form3-textarea" rows="10" cols="50">
-
-                        </textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borders p-8" colspan="2">
-                        <input type="submit" value="Send my Order">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </form>
-
-    <h3 id="form4-ex">Form exercise 4</h3>
-
-    <form action="/form4" method="get">
-        <table class="separated spaced-8 borders">
-            <thead>
-                <tr>
-                    <th class="borders p-16" colspan="2">Registration Form</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="borders p-8"><label for="form4-sname">Student Name</label></td>
-                    <td class="borders p-8"><input type="text" id="form4-sname"></td>
-                </tr>
-                <tr>
-                    <td class="borders p-8"><label for="form4-fname">Father's Name</label></td>
-                    <td class="borders p-8"><input type="text" id="form4-fname"></td>
-                </tr>
-                <tr>
-                    <td class="borders p-8"><label for="form4-mname">Mother's Name</label></td>
-                    <td class="borders p-8"><input type="text" id="form4-mname"></td>
-                </tr>
-                <tr>
-                    <td class="borders p-8"><label for="form4-dob">Date of Birth</label></td>
-                    <td class="borders p-8"><input type="datetime" id="form4-dob" pattern="\d{2}-----\d{4}"
-                            title="DD-----YYYY"></td>
-                </tr>
-                <tr>
-                    <td class="borders p-8">Gender</td>
-                    <td class="borders p-8">
-                        <label for="form4-male">Male</label><input type="radio" name="form4-gender"
-                            id="form4-male"><label for="form4-female">Female</label><input type="radio"
-                            name="form4-gender" id="form4-female">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borders p-8"><label for="form4-email">Email Id</label></td>
-                    <td class="borders p-8"><input type="email" name="form4-email" id="form4-email"></td>
-                </tr>
-                <tr>
-                    <td class="borders p-8"><label for="form4-phone">Mobile No.</label></td>
-                    <td class="borders p-8"><input type="tel" name="form4-phone" id="form4-phone"></td>
-                </tr>
-                <tr>
-                    <td class="borders p-8"><label for="form4-address">Address</label></td>
-                    <td class="borders p-8"><textarea name="form4-address" id="form4-address" rows="5"></textarea></td>
-                </tr>
-                <tr>
-                    <td class="borders p-8"><label for="form4-state">State</label></td>
-                    <td class="borders p-8"><input type="text" id="form4-state"></td>
-                </tr>
-                <tr>
-                    <td class="borders p-8"><label for="form4-city">City</label></td>
-                    <td class="borders p-8"><input type="text" id="form4-city"></td>
-                </tr>
-                <tr>
-                    <td class="borders p-8"></td>
-                    <td class="borders p-8"><input type="submit" value="Submit"></td>
-                </tr>
-            </tbody>
-        </table>
-    </form>
-
-    <h3 id="form5-ex">Form exercise 5</h3>
-
-    <form action="/form5" method="get">
-        <p><label for="form5-fname">Firstname: </label><input type="text" name="form5-fname" id="form5-fname"></p>
-        <p><label for="form5-lname">Lastname: </label><input type="text" name="form5-lname" id="form5-lname"></p>
-        <p>
-            <label for="form5-course">Courses</label>
-            <select name="form5-course" id="form5-course">
-                <option value="course0" disabled selected>Course</option>
-                <option value="cs234">Statistics &amp; Probability</option>
-                <option value="cs322">Web Technologies &amp; Development</option>
-                <option value="cs343">Systems Design &amp; Analysis</option>
-            </select>
-        </p>
-        <p>
-        <p>Gender:</p>
-        <p><input type="radio" name="form5-gender" id="form5-male"><label for="form5-male">Male</label></p>
-        <p><input type="radio" name="form5-gender" id="form5-female"><label for="form5-female">Female</label></p>
-        <p><input type="radio" name="form5-gender" id="form5-gender_other"><label for="form5-gender_other">Other</label>
-        </p>
-        </p>
-        <p>
-        <p>Hobbies: </p>
-        <p><input type="checkbox" name="form5-hobbies" id="form5-programming"><label
-                for="form5-programming">Programming</label></p>
-        <p><input type="checkbox" name="form5-hobbies" id="form5-cricket"><label for="form5-cricket">Cricket</label></p>
-        <p><input type="checkbox" name="form5-hobbies" id="form5-football"><label for="form5-football">Football</label>
-        </p>
-        <p><input type="checkbox" name="form5-hobbies" id="form5-novel"><label for="form5-novel">Reading Novel</label>
-        </p>
-        </p>
-        <p>
-            <label for="form5-phone">Phone: </label><input type="tel" name="form5-phone" id="form5-phone">
-        </p>
-        <p>
-        <p><label for="form5-address">Address</label></p>
-        <textarea name="form5-address" id="form5-address" cols="30" rows="10"></textarea>
-        </p>
-        <p>
-            <label for="form5-email">Email: </label><input type="email" name="form5Email" id="form5-email">
-        </p>
-        <p>
-            <label for="form5-password">Password: </label><input type="password" name="form5Password"
-                id="form5-password">
-        </p>
-        <p>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </p>
-    </form>
-
-    <h3 id="form6-ex">Form exercise 6</h3>
-
-    <form action="/form6" method="get">
-        <table class="collapse spaced-4">
-            <tbody>
-                <tr>
-                    <td class="p-8"><label for="form6-fname">First Name*</label></td>
-                    <td class="p-8"><input type="text" name="form6FName" id="form6-fname" required></td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form6-lname">Last Name</label></td>
-                    <td class="p-8"><input type="text" name="form6LName" id="form6-lname"></td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form6-phone">Phone Number</label></td>
-                    <td class="p-8"><input type="tel" name="form6Phone" id="form6-phone"></td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form6-datetime">Date Time</label></td>
-                    <td class="p-8"><input type="date" name="form6DateTime" id="form6-datetime"></td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form6-city">City</label></td>
-                    <td class="p-8">
-                        <select name="form6City" id="form6-city">
-                            <option value="tphcm" selected>TPHCM</option>
-                            <option value="ny">New York</option>
-                            <option value="la">Los Angeles</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <td class="p-8" colspan="2" style="border-top: 1px solid #999;">
-                    <input type="submit" value="Complete task">
-                    <input type="reset" value="Reset form">
-                </td>
-            </tfoot>
-        </table>
-    </form>
-
-    <h3 id="form7-ex">Form exercise 7</h3>
-
-    <form action="/form7" method="get">
-        <fieldset style="width: min-content;">
-            <legend>Personal Data</legend>
-            <table class="collapse">
+            <table>
+                <tfoot>
+                    <td class="p-8"><input class="full" type="reset" value="Reset"></td>
+                    <td class="p-8"><input class="full" type="submit" value="Submit"></td>
+                </tfoot>
                 <tbody>
                     <tr>
-                        <td class="p-8" colspan="2">
-                            <p><label for="form7-lname">Last Name*</label></p><input type="text" name="form7LName"
-                                id="form7-lname" style="width: 50ch;">
+                        <td class="p-8"><label class="red" for="form10-fname">First Name*</label></td>
+                        <td class="p-8"><input class="full" type="text" name="form10FName" id="form10-fname" autofocus
+                                required maxlength="20" autocomplete list="names">
                         </td>
                     </tr>
                     <tr>
+                        <td class="p-8"><label class="red" for="form10-lname">Last Name*</label></td>
+                        <td class="p-8"><input class="full" type="text" name="form10LName" id="form10-lname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-8"><label class="red" for="form10-email">Email*</label></td>
+                        <td class="p-8"><input type="email" name="form10Email" id="form10-email" multiple required></td>
+                    </tr>
+                    <tr>
+                        <td class="p-8"><label for="form10-phone">Phone</label></td>
+                        <td class="p-8"><input class="full" type="tel" pattern="+\d{3}-\d{3}-\d{6}"
+                                placeholder="+XXX-XXX-XXXX" name="form10Phone" id="form10-phone" multiple></td>
+
+                    </tr>
+                    <tr>
+                        <td class="p-8"><label for="form10-dob">Date of Birth</label></td>
                         <td class="p-8">
-                            <p><label for="form7-fname">First Name*</label></p>
-                            <input type="text" name="form7Fname" id="form7-fname">
+                            <input class="full" type="date" name="form10Date" id="form10-dob" min="1990-01-01"
+                                placeholder="Should at least by 1990.">
                         </td>
-                        <td class="p-8" align="right">
-                            <p><label for="form7-mname">Middle Name</label></p>
-                            <input type="text" name="form7MName" id="form7-mname">
-                        </td>
+
                     </tr>
                     <tr>
-                        <td class="p-8" colspan="2">
-                            <p><label for="form7-email">Email*</label></p><input type="email" name="form7Email"
-                                id="form7-email" style="width: 50ch;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="p-8" colspan="2">
-                            <p><label for="form7-resume">Resume*</label></p><textarea type="text" name="form7Resume"
-                                id="form7-resume" cols="45" rows="10"></textarea>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </fieldset>
-
-        <fieldset style="width: 50ch;">
-            <legend>Job</legend>
-
-            <table class="collapse">
-                <tbody>
-                    <tr>
+                        <td class="p-8"><label for="form10-age">Age</label></td>
                         <td class="p-8">
-                            <p><label for="form7-position">Position applied for</label></p>
-                            <select name="form7Position" id="form7-position" style="width: 100%">
-                                <option value="admin" selected>Adminstration</option>
-                                <option value="management">Management</option>
-                                <option value="secretray">Secretary</option>
+                            <input type="number" class="full" min="16" max="40" step="3" value="20" name="form10Age"
+                                id="form10-age">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-8"><label for="form10-mark">Marks</label></td>
+                        <td class="p-8"><input class="full" type="range" min="16" max="40" step="5" value="20"
+                                name="form10Mark" id="form10-mark"></td>
+                    </tr>
+                    <tr>
+                        <td class="p-8"><label for="form10-favcolor">Favorite Color</label></td>
+                        <td class="p-8"><input class="full" type="color" value="#336699" name="form10FavColor"
+                                id="form10-favcolor">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-8"><label for="form10-search">Search</label></td>
+                        <td class="p-8"><input class="full" type="search" placeholder="Your query here..."
+                                name="form10Search" id="form10-search">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-8" style="vertical-align: top;"><label for="form10-drink">Choose you drink</label>
+                        </td>
+                        <td class="p-8">
+                            <ul type="none" style="margin-top: 0; padding-inline-start: 0;">
+                                <li><input type="checkbox" name="form10Drink" id="form10-coffee"><label
+                                        for="form10-coffee">Coffee</label></li>
+                                <li><input type="checkbox" name="form10Drink" id="form10-tea"><label
+                                        for="form10-tea">Tea</label></li>
+                                <li><input type="checkbox" name="form10Drink" id="form10-milk"><label
+                                        for="form10-milk">Milk</label></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-8" style="vertical-align: top;"><label for="form10Education">Choose you
+                                drink</label></td>
+                        <td class="p-8">
+                            <ul type="none" style="margin-top: 0; padding-left: 0;">
+                                <li><input type="radio" name="form10Education" value="degree" id="form10-degree"><label
+                                        for="form10-coffee">Degree</label></li>
+                                <li><input type="radio" value="diploma" name="form10Education"
+                                        id="form10-diploma"><label for="form10-tea">Diploma</label></li>
+                                <li><input type="radio" value="other" name="form10Education" id="form10-other"><label
+                                        for="form10-milk">Other</label></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-8"><label for="form10-country">Country</label></td>
+                        <td class="p-8">
+                            <select class="full" name="form10Country" id="form10-country">
+                                <option value="ethiopia">Ethiopia</option>
+                                <option value="egypt">Egypt</option>
+                                <option value="uganda">Uganda</option>
                             </select>
                         </td>
-                        <td class="p-8" align="right">
-                            <p><label for="form7-wage">Hourly Wage*</label></p>
-                            <input type="number" name="form7Wage" id="form7-wage" placeholder="30.0"
-                                style="width: 30%;">
+                    </tr>
+                    <tr>
+                        <td class="p-8"><label for="form10-comment">Comment</label></td>
+                        <td class="p-8">
+                            <textarea class="full" name="form10Comment" id="form10-comment" rows="10" cols="15">
+                                Enter your comment here...
+                            </textarea>
                         </td>
                     </tr>
                     <tr>
-                        <td class="p-8">
-                            <p>Date you can start</p>
-                            <input type="month" style="width: 20%;">
-                            <input type="number" style="width: 20%">
-                            <input type="number" style="width: 20%;">
-                        </td>
-                        <td class="p-8" align="right">
-                            <p><label for="form7-whours">Weekly Hours*</label></p>
-                            <input type="number" name="form7WHours" id="form7-whours" placeholder="30.0"
-                                style="width: 30%;">
+                        <td class="p-8"><input type="image" src="vite.svg" alt=""></td>
+                        <td class="p-8"><input type="file" name="form10Upload" id="form10-upload"></td>
+                    </tr>
+                    <tr>
+                        <td class="p-8" colspan="2">
+                            <input type="hidden" name="form10Hidden">
                         </td>
                     </tr>
                 </tbody>
             </table>
-
         </fieldset>
+
     </form>
 
-    <h3 id="form8-ex">Form exercise 8</h3>
-
-    <h4>Student Registration From</h4>
-
-    <form action="/form8" method="get">
-        <table class="collapse">
-            <tbody>
-                <tr>
-                    <td class="p-8"><label for="form8-fname">First Name: </label></td>
-                    <td class="p-8"><input type="text" size="40" name="form8FName" id="form8-fname"></td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form8-lname">Last Name: </label></td>
-                    <td class="p-8"><input type="text" size="40" name="form8LName" id="form8-lname"></td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form8-email">Email: </label></td>
-                    <td class="p-8"><input type="email" size="40" name="form8Email" id="form8-email"></td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form8-phone">Phone: </label></td>
-                    <td class="p-8"><input type="tel" size="40" name="form8Phone" id="form8-phone"></td>
-                </tr>
-                <tr>
-                    <td class="p-8">
-                        <p>Gender</p>
-                    </td>
-                    <td class="p-8">
-                        <input type="radio" size="40" name="form8-gender" id="form8-male"><label
-                            for="form8-male">Male</label><input type="radio" name="form8-gender"
-                            id="form8-female"><label for="form8-female">Female</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form8-dob">Date of Birth: </label></td>
-                    <td class="p-8"><input type="date" size="40" name="form8DoB" id="form8-dob"></td>
-                </tr>
-                <tr>
-                    <td class="p-8" style="vertical-align: top;"><label for="form8-address">Address: </label></td>
-                    <td class="p-8"><textarea name="form8Address" id="form8-address" cols="40" rows="10"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form8-city">City: </label></td>
-                    <td class="p-8"><input type="text" size="40" name="form8City" id="form8-city"></td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form8-pin">Area PIN: </label></td>
-                    <td class="p-8"><input type="text" size="40" name="form8Pin" id="form8-pin"></td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form8-state">State: </label></td>
-                    <td class="p-8"><input type="text" size="40" name="form8State" id="form8-state"></td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form8-qualifications">Qualifications: </label></td>
-                    <td class="p-8">
-                        <select name="form8Qualifications" id="form8-qualifications">
-                            <option value="labelOption" disabled selected>Select Qualification:</option>
-                            <option value="degree">Degree</option>
-                            <option value="masters">Masters</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="p-8" style="vertical-align: top;">Specializations: </td>
-                    <td class="p-8">
-                        <p style="margin-block-start: 0;">
-                            <input type="checkbox" name="form8-spec" id="form8-cs">
-                            <label for="form8-cs">Computer Science</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="form8-spec" id="form8-it">
-                            <label for="form8-it">Information Technology</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="form8-spec" id="form8-ca">
-                            <label for="form8-ca">Computer Architecture</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="form8-spec" id="form8-tc">
-                            <label for="form8-tc">Tele Communication</label>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="p-8"><label for="form8-pass">Password: </label></td>
-                    <td class="p-8"><input type="password" size="40" name="form8Pass" id="form8-pass"></td>
-                </tr>
-
-                <tr>
-                    <td class="p-8" colspan="2">
-                        <input type="submit" value="Register!">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </form>
+    <datalist id="names">
+        <options value="abebe">Abebe</options>
+        <options value="kebede">Kebede</options>
+        <options value="alemu">Alemu</options>
+    </datalist>
 </body>
 
 </html>
