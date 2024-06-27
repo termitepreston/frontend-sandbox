@@ -72,3 +72,34 @@ table {
 .red {
     color: red;
 }
+
+.left {
+    text-align: left;
+}
+
+.mb-0 {
+    margin-block: 0;
+}
+
+.pi-8 {
+    padding-inline: 8px;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.stack > * + * {
+    margin-block-start: 1.5rem;
+}
+
+.bio {
+    background: ghostwhite;
+    padding: 2.5rem 2.5rem 3.5rem;
+    margin-inline: auto;
+}
+
+section > * + * {
+    margin-block-start: 1.5rem;
+
+}

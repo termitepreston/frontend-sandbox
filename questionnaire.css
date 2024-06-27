@@ -1,0 +1,55 @@
+:root {
+    font-family: Inter;
+    font-size: 10pt;
+    text-rendering: optimizeLegibility;
+}
+
+p, ol, ul {
+    text-align: justify;
+    hyphens: auto;
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 1in 1in 1in 1in;
+
+        @bottom-left {
+            content: counter(page) ' of ' counter(pages);
+        }
+
+    }
+
+}
+
+@media screen {
+    body {
+        max-width: 21cm;
+        margin-inline: auto;
+        box-sizing: border-box;
+    }
+}
+
+.answer-box {
+    height: 200pt;
+    border: 2px dashed black;
+}
+
+.notice {
+    padding-inline: 2rem;
+    padding-block: 2.5rem;
+    border: 2px solid black;
+}
+
+p,
+li {
+    line-height: 1.5;
+}
+
+ol, ul {
+    list-style: outside decimal;
+}
+
+.text-center {
+    text-align: center;
+}
