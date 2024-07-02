@@ -4,20 +4,24 @@
     text-rendering: optimizeLegibility;
 }
 
-p, ol, ul {
+p,
+ol,
+ul {
     text-align: justify;
     hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Inter Display";
 }
 
 @media print {
     @page {
         size: A4 portrait;
-        margin: 1in 1in 1in 1in;
-
-        @bottom-left {
-            content: counter(page) ' of ' counter(pages);
-        }
-
+        margin: 1in 0.75in;
     }
 
 }
@@ -46,7 +50,8 @@ li {
     line-height: 1.5;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: outside decimal;
 }
 

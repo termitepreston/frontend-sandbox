@@ -1,0 +1,53 @@
+/* CSS glossary of terms:
+
+1. style sheet: the CSS file or <style> tag.
+2. declaration: each property: property-value pair.
+3. rule or rule-set: made up of selector list and list of declarations. */
+
+/* Order of application. 
+
+1. User stylesheets.
+    1.1. Inline.
+    1.2. Embedded
+    1.3. External
+2. Author stylesheets.
+3. Browser stylesheets. */
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Inter Display";
+}
+
+
+
+/* universal selector */
+:root {
+    font-family: Inter, "Public Sans", sans-serif;
+}
+
+/* h2,
+p {
+    color: red;
+}
+
+a,
+#heading {
+    color: green;
+}
+
+.green {
+    color: green;
+} */
+
+/* div div a {
+    font-size: 3rem;
+} */
+
+
+/* not just first direct descendent but all direct descendants. */
+body>div>p {
+    color: red;
+}

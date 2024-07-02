@@ -1,0 +1,85 @@
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.5,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    /* Step -2: 12.5px → 8.8889px */
+    --step--2: clamp(0.5556rem, 0.8598rem + -0.3925vi, 0.7813rem);
+    /* Step -1: 15px → 13.3333px */
+    --step--1: clamp(0.8333rem, 0.9737rem + -0.1812vi, 0.9375rem);
+    /* Step 0: 18px → 20px */
+    --step-0: clamp(1.125rem, 1.0815rem + 0.2174vi, 1.25rem);
+    /* Step 1: 21.6px → 30px */
+    --step-1: clamp(1.35rem, 1.1674rem + 0.913vi, 1.875rem);
+    /* Step 2: 25.92px → 45px */
+    --step-2: clamp(1.62rem, 1.2052rem + 2.0739vi, 2.8125rem);
+    /* Step 3: 31.104px → 67.5px */
+    --step-3: clamp(1.944rem, 1.1528rem + 3.9561vi, 4.2188rem);
+    /* Step 4: 37.3248px → 101.25px */
+    --step-4: clamp(2.3328rem, 0.9431rem + 6.9484vi, 6.3281rem);
+    /* Step 5: 44.7898px → 151.875px */
+    --step-5: clamp(2.7994rem, 0.4714rem + 11.6397vi, 9.4922rem);
+}
+
+
+:root {
+    font-family: Inter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Inter Display";
+}
+
+h1 {
+    font-size: var(--step-5);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.tight {
+    /* https://rsms.me/inter/lab/?invert-colors=1&letterSpacing=-4.8&lineHeight=139&opsz=28.76&size=159&wght=718 */
+    font-family: Geist;
+    letter-spacing: -0.06em;
+    line-height: 1;
+    hyphens: auto;
+    font-weight: 700;
+    line-height: 0.8;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+    /* use overflow: auto so that the scroll bar is only visible when the content is actually overflowing. */
+    overflow-x: auto;
+}
+
+.frag {
+    padding: 1.5rem;
+    background: paleturquoise
+}
+
+.half {
+    width: 50%;
+}
+
+.p-16 {
+    padding: 1rem;
+}
+
+section {
+    box-sizing: border-box;
+}
+
+.moccasin {
+    background: moccasin;
+}
+
+.lightsalmon {
+    background: lightsalmon;
+}
