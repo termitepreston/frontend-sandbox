@@ -1,0 +1,67 @@
+/* h1 {
+    color: hotpink;
+}
+
+.one {
+    color: cadetblue;
+}
+
+#one {
+    color: lightsalmon;
+}
+
+h1.one {
+    color: khaki;
+}
+
+div h1 {
+    color: papayawhip;
+}
+
+#div h1 {
+    color: crimson !important;
+}
+
+
+#div #one {
+    color: lavender;
+}
+
+#div .one {
+    color: red;
+}
+
+div h1 {
+    color: indigo;
+}
+
+[class=one] {
+    color: lime;
+}
+
+:root {
+    font-family: Satoshi;
+    hyphens: auto;
+}
+
+h1 {
+    letter-spacing: -0.05em;
+    font-size: 5rem;
+    width: 50%;
+    line-height: 0.9em;
+}
+
+body {
+    background: rgb(13, 14, 14);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background: red;
+    width: 50vmin;
+    height: 50vmax;
+}

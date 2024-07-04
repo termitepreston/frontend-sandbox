@@ -1,0 +1,48 @@
+:root {
+    font-family: "Inter";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Inter Display";
+}
+
+.box {
+    padding: 2.5rem;
+    background: hsl(240deg 50% 50% / 0.2);
+}
+
+/* body>div>h2~p {
+    color: red;
+}
+
+
+.outer>h2~p {
+    color: red;
+}
+
+h2:has(+ p) {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+p[class="one"] {
+    background: steelblue;
+}
+
+p[class^=o] {
+    background-color: aquamarine;
+}
+
+input[type=text] {
+    padding: 3.5rem;
+}
+
+*/
+
+a[href*=with] {
+    color: red;
+}

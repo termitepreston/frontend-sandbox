@@ -48,6 +48,10 @@ a,
 
 
 /* not just first direct descendent but all direct descendants. */
-body>div>p {
+/* body>div>p {
     color: red;
+} */
+
+h2+p {
+    background-color: steelblue;
 }

@@ -1,0 +1,49 @@
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: rgb(114, 22, 100);
+}
+
+a:hover {
+    color: yellow;
+    font-size: 2.5rem;
+    transition: all 1.2s;
+}
+
+a:active {
+    color: blue
+}
+
+
+h2:first-of-type {
+    color: steelblue;
+}
+
+/* OR */
+
+h2:last-of-type {
+    color: blue;
+}
+
+p:last-child {
+    color: green;
+}
+
+P:last-of-type {
+    color: green;
+}
+
+/* last of begin from the bottom. */
+
+/* p:nth-last-child(-1n+3),
+p:nth-child(-1n+4) {
+    background: rgb(208, 195, 52);
+} */
+
+/* p:nth-last-child(-1n+3), */
+p:nth-child(n+4):nth-last-child(n+3) {
+    background: hsl(40deg 69% 57% / 0.8);
+    background: color(from rebeccapurple srgb r g b / 0.9);
+}
